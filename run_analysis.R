@@ -50,8 +50,8 @@ out_folder <- 'UCI HAR Dataset/output'
 if(!file.exists(out_folder)) {
   dir.create(out_folder)
 }
-out_file_1 <- paste(out_folder, 'step_4_data_set.csv', sep = "/")
-out_file_2 <- paste(out_folder, 'step_5_data_set.csv', sep = "/")
+out_file_1 <- paste(out_folder, 'step_4_data_set.txt', sep = "/")
+out_file_2 <- paste(out_folder, 'step_5_data_set.txt', sep = "/")
 
-write.csv(extracted_data, file = out_file_1, row.names = FALSE)
-write.csv(dcast_data, file = out_file_2, row.names = FALSE)
+write.table(extracted_data, file = out_file_1, row.names = FALSE)
+write.table(dcast_data, file = out_file_2, row.names = FALSE)
