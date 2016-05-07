@@ -9,3 +9,5 @@ The main script, `run_analysis.R`, does the following things:
 5. Merges the train and test data set
 6. Extract out mean and standard deviation measurements, and write to `step_4_data_set.txt`
 6. Use reshape2's melt and dcast functions to calculate mean of each measurements grouped by subject and activity, and write to `step_5_data_set.txt`
+
+Please note: the data folder should be in : `your working directory/UCI HAR Dataset`
